@@ -1,1 +1,1 @@
-## This is boilerplate for play with SCSS
+## live: https://exanna.github.io/MNTN-Landing-Page/
