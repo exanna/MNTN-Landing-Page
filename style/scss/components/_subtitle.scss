@@ -1,0 +1,23 @@
+.subtitle {
+   position: relative;
+   transform: translateX(100px);
+   margin-bottom: 27px;
+   position: relative;
+
+   font-size: $font-size;
+   letter-spacing: 6px;
+   font-family: "PT Serif";
+   font-weight: map-get($map: $font-weights, $key: "extra-bold");
+   color: $orange;
+   text-transform: uppercase;
+
+      &::before {
+         position: absolute;
+         width: 80px;
+         content: '';
+         height: 2px;
+         top: calc(50% - 1px);
+         left: -100px;
+         background-color: $orange;
+      }
+}

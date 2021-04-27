@@ -1,0 +1,21 @@
+.main-navigation {
+   min-width: 20%;   
+
+   @media screen and (max-width: $lg) {
+      min-width: 40%;
+   }
+
+   @media screen and (max-width: 550px) {
+      min-width: 70%;
+   }
+   &__list {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+   }
+
+      &__list-link {
+         display: block;
+      }
+}

@@ -1,0 +1,31 @@
+.articles-navigation {
+   display: flex;
+   flex-direction: column;
+
+   @media screen and (max-width: $md) {
+      display: none;
+   }
+
+   &__list {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-end;
+      height: 100%;
+      // border: 2px solid red;
+   }
+
+      &__list-link {
+         display: block;
+         font-size: $font-size;
+         padding: 20px;
+         border-right: 1px solid $white;
+         font-weight: map-get($map: $font-weights, $key: "bold" );
+         
+         &--active {
+            border-right: 3px solid $white;
+         }
+      }
+   
+
+}

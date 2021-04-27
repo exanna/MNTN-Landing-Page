@@ -1,0 +1,42 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   cursor: default;
+}
+
+::before, ::after {
+   box-sizing: border-box;
+   display: block;
+}
+
+a {
+   text-decoration: none;
+   cursor: pointer;
+   color: white;
+   transition: color .3s; 
+
+   img {
+      transition: .3s;
+
+      &:hover {
+         filter: saturate(200%);
+      }
+   }
+
+   &:hover {
+      color: $orange;
+   }
+}
+
+ol, ul, li {
+   list-style: none;
+}
+
+img {
+   max-width: 100%;
+}
+
+:focus {
+   outline: 0;
+}
